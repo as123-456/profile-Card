@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .card {
+            position: relative;
+            width: 350px;
+            border-radius: 20px 20px 20px 0; /* Bottom-left sharp */
+            overflow: hidden;
+            background-color: #b0a9a9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .top-section {
+            background-color: purple;
+            height: 100px; /* Adjust height */
+        }
+
+        .profile-img {
+            position: absolute;
+            top: 50px; /* Adjust to center between colors */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 4px solid white;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .info {
+            padding: 60px 20px 20px; /* Top padding to prevent text overlap */
+            color: #333;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .info h2 {
+            margin: 10px 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .info p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="top-section"></div>
+        <div class="profile-img">
+            <img src="profile.jpg" alt="Profile Image">
+        </div>
+        <div class="info">
+            <h2>General Anil Chauhan</h2>
+            <p><strong>Rank:</strong> CDS</p>
+            <p><strong>Service years:</strong> 13 June 1981 - 31 May 2021, 30 September 2022 - Present (as CDS)</p>
+            <p><strong>Awards:</strong> Vishisht Seva Medal 2011, The Sena Medal 2014, and many more...</p>
+        </div>
+    </div>
+
+</body>
+</html>
